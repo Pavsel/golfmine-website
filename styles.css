@@ -10,38 +10,55 @@
 body {
     /*background-color: #090F2E;*/
     color: white;
-
-
 }
 
 h1 {
-    font-weight: 400;
-    font-size: 40px;
+    font-size: 5rem;
+    font-weight: 500;
     text-align: center;
 }
 
 h2 {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 4rem;
     text-align: center;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: 400;
+    color: #e3e3e3;
+
 }
 
 h4 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     line-height: 2rem;
+    color: #c9c9c9;
+}
+
+ul{
+    font-size: 2rem;
+    line-height: 3rem;
 }
 
 nav {
     width: 100%;
-    height: 80px;
+    height: 120px;
 
     display: flex;
     flex-direction: row;
     align-items: end;
     justify-content: center;
     gap: 10px;
+    margin-bottom: 50px;
+}
+
+.logo{
+    font-size: 3.4rem;
+    font-weight: 500;
 }
 
 footer {
@@ -58,7 +75,7 @@ footer {
 }
 
 .hero {
-    padding: 0 10% 50px 10%;
+    padding: 0 5% 50px 5%;
 
     display: flex;
     flex-direction: column;
@@ -74,21 +91,28 @@ footer {
 
 }
 
+video{
+    width: 90vw;
+    overflow: hidden;
+}
+
 .cta {
     color: white;
     background-color: #FF323F;
     font-weight: 500;
-    font-size: 25px;
+    font-size: 4rem;
     text-align: center;
 
-    padding: 15px 60px;
-    border-radius: 40px;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    width: 100%;
 
     text-decoration: underline transparent;
 
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 
     transition: all 0.5s;
+    text-wrap: none;
 }
 
 .cta:hover {
@@ -113,7 +137,6 @@ footer {
 
 .steps {
     padding: 30px 15% 100px 15%;
-    min-height: 100vh;
     background-color: white;
     color: #090F2E;
 
@@ -132,20 +155,13 @@ footer {
 
 .step h2 {
     color: #FF323F;
-    font-size: 30px;
-}
-
-.step ul {
-    width: 400px;
-    line-height: 1.5rem;
-    gap: 1px;
 }
 
 .step li:not(:last-child) {
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 600px) {
     .underline{
         top: 65px;
         right: 0;
@@ -162,5 +178,10 @@ footer {
 
     h4 {
         font-size: 30px;
+    }
+
+    video{
+        height: 90vh;
+        width: auto;
     }
 }
